@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sahil Kadam | Projects</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="projects-page">
+  <div class="bg-orb orb-1" aria-hidden="true"></div>
+  <div class="bg-orb orb-2" aria-hidden="true"></div>
+  <div class="bg-particles" id="bgParticles" aria-hidden="true"></div>
+  <div class="cursor-light" id="cursorLight" aria-hidden="true"></div>
+
+  <main class="projects-main">
+    <nav class="nav glass projects-nav">
+      <p class="brand">Sahil Kadam</p>
+      <div class="nav-links">
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="case-study.html">Case Study</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </nav>
+
+    <section class="section glass projects-hero depth-stage reveal">
+      <div class="projects-hero-layout">
+        <div class="projects-hero-copy">
+          <p class="eyebrow parallax-layer" data-parallax-speed="0.2">Project Portfolio</p>
+          <h1 class="projects-title parallax-layer" data-parallax-speed="0.32">Automation Projects With Real Workflow Impact</h1>
+          <p class="projects-intro-copy parallax-layer" data-parallax-speed="0.24">A focused collection of Excel and Python automation work for reporting, data quality, payroll, and desktop productivity workflows.</p>
+          <div class="hero-cta parallax-layer" data-parallax-speed="0.18">
+            <a class="btn btn-primary" href="#projects">Explore Projects</a>
+            <a class="btn btn-secondary" href="index.html">Back to Home</a>
+          </div>
+        </div>
+        <div class="projects-kpis parallax-layer" data-parallax-speed="0.28">
+          <article class="kpi-card reveal">
+            <p class="kpi-value">10+</p>
+            <p class="kpi-label">Projects Built</p>
+          </article>
+          <article class="kpi-card reveal">
+            <p class="kpi-value">2</p>
+            <p class="kpi-label">Core Categories</p>
+          </article>
+          <article class="kpi-card reveal">
+            <p class="kpi-value">Python</p>
+            <p class="kpi-label">Primary Stack</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section glass project-toolbar reveal" aria-label="Project filters">
+      <label class="project-search-wrap" for="projectSearch">
+        <span>Search Projects</span>
+        <input id="projectSearch" class="project-search" type="search" placeholder="Try: payroll, inventory, dashboard..." />
+      </label>
+      <div class="filter-group" role="group" aria-label="Project categories">
+        <button class="filter-btn is-active" data-filter="all" type="button">All</button>
+        <button class="filter-btn" data-filter="automation" type="button">Automation</button>
+        <button class="filter-btn" data-filter="desktop" type="button">Desktop Apps</button>
+      </div>
+      <p class="project-count" id="projectCount">Showing all projects</p>
+    </section>
+
+    <section class="section reveal" id="projects">
+      <div class="section-title-row">
+        <h2>Projects Showcase</h2>
+        <span class="badge">Automation + Desktop</span>
+      </div>
+
+      <article class="project project-featured glass project-item reveal" id="project-sales-dashboard" data-category="automation" data-title="Automated Sales Dashboard Script">
+        <div class="project-header">
+          <h3>Automated Sales Dashboard Script</h3>
+          <span class="badge">Featured</span>
+        </div>
+        <p>Built an automated sales dashboard workflow that combines raw files, cleans data, and presents KPI-ready reports in one view.</p>
+        <a class="btn btn-secondary" href="case-study-sales-dashboard.html">View Case Study</a>
+        <div class="project-screenshots">
+          <button class="screenshot-btn" type="button" aria-label="Open screenshot 1 preview">
+            <img src="images/sales-dashboard-1.png" alt="Automated Sales Dashboard overview" />
+          </button>
+          <button class="screenshot-btn" type="button" aria-label="Open screenshot 2 preview">
+            <img src="images/sales-dashboard-2.png" alt="Automated Sales Dashboard KPIs and trends" />
+          </button>
+        </div>
+      </article>
+
+      <div class="project-grid">
+        <article class="project glass project-item reveal" id="project-data-cleaning" data-category="automation" data-title="Data Cleaning Automation Script">
+          <div class="project-header">
+            <h3>Data Cleaning Automation Script</h3>
+            <span class="badge">Data Quality</span>
+          </div>
+          <p>Automated messy dataset cleanup with Python to standardize records, remove duplicates, and produce a clear quality report.</p>
+          <a class="btn btn-secondary" href="case-study-data-cleaning.html">View Case Study</a>
+          <div class="project-screenshots">
+            <button class="screenshot-btn" type="button" aria-label="Open messy data cleaning screenshot preview">
+              <img src="images/Messy_Data Cleaning.png" alt="Messy source data before automation cleanup" />
+            </button>
+            <button class="screenshot-btn" type="button" aria-label="Open cleaned data cleaning screenshot preview">
+              <img src="images/Cleaned Data Cleaning.png" alt="Cleaned and standardized data after automation" />
+            </button>
+            <button class="screenshot-btn" type="button" aria-label="Open data cleaning report screenshot preview">
+              <img src="images/Data Cleaning Report.png" alt="Data cleaning report showing rows fixed and missing value status" />
+            </button>
+          </div>
+        </article>
+
+        <article class="project glass project-item reveal" id="project-inventory-management" data-category="automation" data-title="Inventory Management Script">
+          <div class="project-header">
+            <h3>Inventory Management Script</h3>
+            <span class="badge">Operations</span>
+          </div>
+          <p>Built an inventory automation workflow that monitors stock levels, flags low-stock items, and summarizes reorder needs in a dashboard.</p>
+          <a class="btn btn-secondary" href="case-study-inventory.html">View Case Study</a>
+          <div class="project-screenshots">
+            <button class="screenshot-btn" type="button" aria-label="Open inventory dashboard screenshot preview">
+              <img src="images/Inventory Management Dashboard.png" alt="Inventory management dashboard with KPIs and trends" />
+            </button>
+            <button class="screenshot-btn" type="button" aria-label="Open inventory sheet screenshot preview">
+              <img src="images/Inventory Management Sheet.png" alt="Inventory management sheet with item level records" />
+            </button>
+          </div>
+        </article>
+
+        <article class="project glass project-item reveal" id="project-payroll-automation" data-category="automation" data-title="Payroll Automation Script">
+          <div class="project-header">
+            <h3>Payroll Automation Script</h3>
+            <span class="badge">Finance</span>
+          </div>
+          <p>Built a payroll automation workflow that reads employee salary data from Excel and generates formatted payslip PDFs automatically.</p>
+          <a class="btn btn-secondary" href="case-study-payroll.html">View Case Study</a>
+          <div class="project-screenshots">
+            <button class="screenshot-btn" type="button" aria-label="Open payslip PDF screenshot preview">
+              <img src="images/Payslip Pdf.png" alt="Generated employee payslip PDF preview" />
+            </button>
+            <button class="screenshot-btn" type="button" aria-label="Open payroll Excel screenshot preview">
+              <img src="images/Payslip Excel.png" alt="Payroll Excel sheet with employee salary details" />
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section glass project-collection reveal" id="desktop-apps">
+      <div class="section-title-row">
+        <h2>Desktop Apps</h2>
+        <span class="badge">Python Tools</span>
+      </div>
+      <p>Custom desktop tools built with Python to simplify day-to-day business workflows.</p>
+      <div class="card-grid">
+        <article class="card glass project-item desktop-3d-card" data-category="desktop" data-title="Advanced File Organizer">
+          <div class="project-header">
+            <h3>Advanced File Organizer</h3>
+            <span class="badge">Utility</span>
+          </div>
+          <ul>
+            <li>Organizes files by type, name, or date</li>
+            <li>Supports batch folder cleanup</li>
+            <li>Improves file management speed</li>
+          </ul>
+          <a class="btn btn-secondary" href="case-study-file-organizer.html">View Case Study</a>
+          <div class="project-screenshots">
+            <button class="screenshot-btn" type="button" aria-label="Open advanced file organizer screenshot preview">
+              <img src="images/Advanced File Organizer.png" alt="Advanced File Organizer desktop app screenshot" />
+            </button>
+          </div>
+        </article>
+
+        <article class="card glass project-item desktop-3d-card" data-category="desktop" data-title="Inventory + Billing Software">
+          <div class="project-header">
+            <h3>Inventory + Billing Software</h3>
+            <span class="badge">Business</span>
+          </div>
+          <ul>
+            <li>Tracks stock and item movement</li>
+            <li>Creates bills and sales records</li>
+            <li>Generates inventory summaries</li>
+          </ul>
+          <a class="btn btn-secondary" href="case-study-inventory-billing.html">View Case Study</a>
+          <div class="project-screenshots">
+            <button class="screenshot-btn" type="button" aria-label="Open inventory and billing settings screenshot preview">
+              <img src="images/Inventory & Billing  Settings.png" alt="Inventory and Billing app settings screen" />
+            </button>
+            <button class="screenshot-btn" type="button" aria-label="Open inventory and billing billing screenshot preview">
+              <img src="images/Inventory & Billing Billing.png" alt="Inventory and Billing app billing screen" />
+            </button>
+            <button class="screenshot-btn" type="button" aria-label="Open inventory and billing dashboard screenshot preview">
+              <img src="images/Inventory & Billing DashBoard.png" alt="Inventory and Billing app dashboard screen" />
+            </button>
+            <button class="screenshot-btn" type="button" aria-label="Open inventory and billing products screenshot preview">
+              <img src="images/Inventory & Billing Products.png" alt="Inventory and Billing app products screen" />
+            </button>
+            <button class="screenshot-btn" type="button" aria-label="Open inventory and billing reports screenshot preview">
+              <img src="images/Inventory & Billing Reports.png" alt="Inventory and Billing app reports screen" />
+            </button>
+          </div>
+        </article>
+
+        <article class="card glass project-item desktop-3d-card" data-category="desktop" data-title="Password Generator">
+          <div class="project-header">
+            <h3>Password Generator</h3>
+            <span class="badge">Security</span>
+          </div>
+          <ul>
+            <li>Generates strong random passwords</li>
+            <li>Supports custom length and rules</li>
+            <li>Improves account security</li>
+          </ul>
+          <a class="btn btn-secondary" href="case-study-password-generator.html">View Case Study</a>
+          <div class="project-screenshots">
+            <button class="screenshot-btn" type="button" aria-label="Open password generator main screenshot preview">
+              <img src="images/Password Generator Main.png" alt="Password Generator app main screen" />
+            </button>
+            <button class="screenshot-btn" type="button" aria-label="Open password generator saved password screenshot preview">
+              <img src="images/Password Generator Saved Password.png" alt="Password Generator saved passwords screen" />
+            </button>
+          </div>
+        </article>
+
+        <article class="card glass project-item desktop-3d-card" data-category="desktop" data-title="Payroll Management System + Payslip Generator">
+          <div class="project-header">
+            <h3>Payroll Management System + Payslip Generator</h3>
+            <span class="badge">Payroll</span>
+          </div>
+          <ul>
+            <li>Manages employee salary records</li>
+            <li>Calculates payroll automatically</li>
+            <li>Exports payslips in ready format</li>
+          </ul>
+          <a class="btn btn-secondary" href="case-study-payroll-system.html">View Case Study</a>
+          <div class="project-screenshots">
+            <button class="screenshot-btn" type="button" aria-label="Open payroll home dashboard screenshot preview">
+              <img src="images/Payroll Home Dashboard.png" alt="Payroll home dashboard screen" />
+            </button>
+            <button class="screenshot-btn" type="button" aria-label="Open payroll employee manager screenshot preview">
+              <img src="images/Payroll Employee Manager.png" alt="Payroll employee manager screen" />
+            </button>
+            <button class="screenshot-btn" type="button" aria-label="Open payroll reports screenshot preview">
+              <img src="images/Payroll Reports .png" alt="Payroll reports screen" />
+            </button>
+            <button class="screenshot-btn" type="button" aria-label="Open payroll company screenshot preview">
+              <img src="images/Payroll Company.png" alt="Payroll company setup screen" />
+            </button>
+          </div>
+        </article>
+
+        <article class="card glass project-item desktop-3d-card" data-category="desktop" data-title="Simple Calculator">
+          <div class="project-header">
+            <h3>Simple Calculator</h3>
+            <span class="badge">Utility</span>
+          </div>
+          <ul>
+            <li>Performs basic arithmetic operations</li>
+            <li>Clean desktop UI for quick use</li>
+            <li>Useful for daily calculations</li>
+          </ul>
+          <a class="btn btn-secondary" href="case-study-calculator.html">View Case Study</a>
+          <div class="project-screenshots">
+            <button class="screenshot-btn" type="button" aria-label="Open simple calculator screenshot preview">
+              <img src="images/Calculator.png" alt="Simple Calculator desktop app screen" />
+            </button>
+          </div>
+        </article>
+
+        <article class="card glass project-item desktop-3d-card" data-category="desktop" data-title="Unit Converter">
+          <div class="project-header">
+            <h3>Unit Converter</h3>
+            <span class="badge">Tooling</span>
+          </div>
+          <ul>
+            <li>Converts units across categories</li>
+            <li>Fast and accurate value conversion</li>
+            <li>Supports day-to-day use cases</li>
+          </ul>
+          <a class="btn btn-secondary" href="case-study-unit-converter.html">View Case Study</a>
+          <div class="project-screenshots">
+            <button class="screenshot-btn" type="button" aria-label="Open unit converter light theme screenshot preview">
+              <img src="images/Unit Converter Light Theme.png" alt="Unit Converter app in light theme" />
+            </button>
+            <button class="screenshot-btn" type="button" aria-label="Open unit converter dark theme screenshot preview">
+              <img src="images/Unit Converter Dark Theme (1).png" alt="Unit Converter app in dark theme" />
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <div class="lightbox" id="imageLightbox" aria-hidden="true">
+    <div class="lightbox-panel">
+      <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close preview">Close</button>
+      <button class="lightbox-nav" id="lightboxPrev" type="button" aria-label="Previous image">Prev</button>
+      <img id="lightboxImage" src="" alt="Project preview" />
+      <button class="lightbox-nav" id="lightboxNext" type="button" aria-label="Next image">Next</button>
+    </div>
+  </div>
+
+  <script>
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const canHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+    const screenshotButtons = Array.from(document.querySelectorAll('.screenshot-btn'));
+    const lightbox = document.getElementById('imageLightbox');
+    const lightboxImage = document.getElementById('lightboxImage');
+    const lightboxPrev = document.getElementById('lightboxPrev');
+    const lightboxNext = document.getElementById('lightboxNext');
+    const lightboxClose = document.getElementById('lightboxClose');
+    const projectItems = Array.from(document.querySelectorAll('.project-item'));
+    const filterButtons = Array.from(document.querySelectorAll('.filter-btn'));
+    const projectSearch = document.getElementById('projectSearch');
+    const projectCount = document.getElementById('projectCount');
+    const revealItems = Array.from(document.querySelectorAll('.reveal'));
+    const parallaxItems = Array.from(document.querySelectorAll('.parallax-layer'));
+    const particlesRoot = document.getElementById('bgParticles');
+    const cursorLight = document.getElementById('cursorLight');
+    const cards3D = Array.from(document.querySelectorAll('.project-item, .kpi-card, .project-toolbar, .projects-hero'));
+    const magneticButtons = Array.from(document.querySelectorAll('.btn, .filter-btn'));
+    const previewImages = screenshotButtons.map((button) => {
+      const img = button.querySelector('img');
+      return { src: img.src, alt: img.alt };
+    });
+    const totalProjects = projectItems.length;
+    let activePreview = 0;
+    let activeFilter = 'all';
+    let rafId = 0;
+
+    function updatePreview(index) {
+      activePreview = (index + previewImages.length) % previewImages.length;
+      lightboxImage.src = previewImages[activePreview].src;
+      lightboxImage.alt = previewImages[activePreview].alt;
+    }
+
+    function openPreview(index) {
+      updatePreview(index);
+      lightbox.classList.add('is-open');
+      lightbox.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closePreview() {
+      lightbox.classList.remove('is-open');
+      lightbox.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+
+    screenshotButtons.forEach((button, index) => {
+      button.addEventListener('click', () => openPreview(index));
+    });
+
+    lightboxPrev.addEventListener('click', () => updatePreview(activePreview - 1));
+    lightboxNext.addEventListener('click', () => updatePreview(activePreview + 1));
+    lightboxClose.addEventListener('click', closePreview);
+    lightbox.addEventListener('click', (event) => {
+      if (event.target === lightbox) closePreview();
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (!lightbox.classList.contains('is-open')) return;
+      if (event.key === 'Escape') closePreview();
+      if (event.key === 'ArrowLeft') updatePreview(activePreview - 1);
+      if (event.key === 'ArrowRight') updatePreview(activePreview + 1);
+    });
+
+    function updateProjectVisibility() {
+      const query = projectSearch.value.trim().toLowerCase();
+      let visible = 0;
+
+      projectItems.forEach((item) => {
+        const category = item.dataset.category || '';
+        const title = item.dataset.title || '';
+        const categoryMatch = activeFilter === 'all' || category === activeFilter;
+        const searchMatch = !query || title.toLowerCase().includes(query) || item.textContent.toLowerCase().includes(query);
+        const shouldShow = categoryMatch && searchMatch;
+        item.classList.toggle('is-hidden', !shouldShow);
+        if (shouldShow) visible += 1;
+      });
+
+      projectCount.textContent = `Showing ${visible} of ${totalProjects} projects`;
+    }
+
+    filterButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        activeFilter = button.dataset.filter || 'all';
+        filterButtons.forEach((btn) => btn.classList.toggle('is-active', btn === button));
+        updateProjectVisibility();
+      });
+    });
+
+    projectSearch.addEventListener('input', updateProjectVisibility);
+    updateProjectVisibility();
+
+    function createParticles() {
+      if (!particlesRoot || prefersReducedMotion) return;
+      const total = 30;
+      const fragment = document.createDocumentFragment();
+
+      for (let i = 0; i < total; i += 1) {
+        const particle = document.createElement('span');
+        const size = (Math.random() * 3 + 1.5).toFixed(2);
+        const x = (Math.random() * 100).toFixed(2);
+        const y = (Math.random() * 100).toFixed(2);
+        const delay = (Math.random() * 8).toFixed(2);
+        const duration = (Math.random() * 10 + 10).toFixed(2);
+        particle.className = 'particle';
+        particle.style.setProperty('--p-size', `${size}px`);
+        particle.style.setProperty('--p-x', `${x}%`);
+        particle.style.setProperty('--p-y', `${y}%`);
+        particle.style.setProperty('--p-delay', `${delay}s`);
+        particle.style.setProperty('--p-duration', `${duration}s`);
+        fragment.appendChild(particle);
+      }
+
+      particlesRoot.appendChild(fragment);
+    }
+
+    function setupReveal() {
+      if (prefersReducedMotion) {
+        revealItems.forEach((item) => item.classList.add('is-visible'));
+        return;
+      }
+
+      const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.18, rootMargin: '0px 0px -8% 0px' });
+
+      revealItems.forEach((item) => revealObserver.observe(item));
+    }
+
+    function setupParallax() {
+      if (prefersReducedMotion || parallaxItems.length === 0) return;
+
+      const updateParallax = () => {
+        const y = window.scrollY || window.pageYOffset;
+        parallaxItems.forEach((item) => {
+          const speed = Number(item.dataset.parallaxSpeed || 0.2);
+          const offset = (y * speed * 0.12).toFixed(2);
+          item.style.setProperty('--parallax-shift', `${offset}px`);
+        });
+        rafId = 0;
+      };
+
+      const onScroll = () => {
+        if (rafId) return;
+        rafId = window.requestAnimationFrame(updateParallax);
+      };
+
+      window.addEventListener('scroll', onScroll, { passive: true });
+      updateParallax();
+    }
+
+    function setupCard3D() {
+      if (!canHover || prefersReducedMotion) return;
+
+      cards3D.forEach((card) => {
+        const state = { tx: 0, ty: 0, gx: 50, gy: 50, cx: 0, cy: 0 };
+        let raf = 0;
+
+        const render = () => {
+          state.cx += (state.tx - state.cx) * 0.18;
+          state.cy += (state.ty - state.cy) * 0.18;
+          card.style.setProperty('--tilt-x', `${state.cx.toFixed(2)}deg`);
+          card.style.setProperty('--tilt-y', `${state.cy.toFixed(2)}deg`);
+          card.style.setProperty('--glow-x', `${state.gx.toFixed(2)}%`);
+          card.style.setProperty('--glow-y', `${state.gy.toFixed(2)}%`);
+          if (Math.abs(state.tx - state.cx) > 0.02 || Math.abs(state.ty - state.cy) > 0.02) {
+            raf = window.requestAnimationFrame(render);
+          } else {
+            raf = 0;
+          }
+        };
+
+        card.addEventListener('mousemove', (event) => {
+          const rect = card.getBoundingClientRect();
+          const px = (event.clientX - rect.left) / rect.width;
+          const py = (event.clientY - rect.top) / rect.height;
+          state.ty = (px - 0.5) * 14;
+          state.tx = (0.5 - py) * 12;
+          state.gx = px * 100;
+          state.gy = py * 100;
+          if (!raf) raf = window.requestAnimationFrame(render);
+        });
+
+        card.addEventListener('mouseleave', () => {
+          state.tx = 0;
+          state.ty = 0;
+          state.gx = 50;
+          state.gy = 50;
+          if (!raf) raf = window.requestAnimationFrame(render);
+        });
+      });
+    }
+
+    function setupCursorLight() {
+      if (!canHover || prefersReducedMotion || !cursorLight) return;
+      const pointer = { x: window.innerWidth * 0.5, y: window.innerHeight * 0.5 };
+      const current = { x: pointer.x, y: pointer.y };
+      let raf = 0;
+
+      const draw = () => {
+        current.x += (pointer.x - current.x) * 0.14;
+        current.y += (pointer.y - current.y) * 0.14;
+        cursorLight.style.setProperty('--cursor-x', `${current.x.toFixed(1)}px`);
+        cursorLight.style.setProperty('--cursor-y', `${current.y.toFixed(1)}px`);
+        raf = window.requestAnimationFrame(draw);
+      };
+
+      window.addEventListener('mousemove', (event) => {
+        pointer.x = event.clientX;
+        pointer.y = event.clientY;
+        if (!raf) raf = window.requestAnimationFrame(draw);
+      }, { passive: true });
+    }
+
+    function setupMagneticButtons() {
+      if (!canHover || prefersReducedMotion) return;
+
+      magneticButtons.forEach((button) => {
+        button.addEventListener('mousemove', (event) => {
+          const rect = button.getBoundingClientRect();
+          const mx = ((event.clientX - rect.left) / rect.width - 0.5) * 10;
+          const my = ((event.clientY - rect.top) / rect.height - 0.5) * 8;
+          button.style.transform = `translate3d(${mx.toFixed(2)}px, ${my.toFixed(2)}px, 0)`;
+        });
+
+        button.addEventListener('mouseleave', () => {
+          button.style.transform = '';
+        });
+      });
+    }
+
+    createParticles();
+    setupReveal();
+    setupParallax();
+    setupCard3D();
+    setupCursorLight();
+    setupMagneticButtons();
+  </script>
+</body>
+</html>

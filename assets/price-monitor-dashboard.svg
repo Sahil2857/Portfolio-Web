@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">Price Monitor Dashboard</title>
+  <desc id="desc">Mock dashboard with pricing chart and product table.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1c2333" />
+      <stop offset="100%" stop-color="#263754" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#bg)" />
+  <rect x="30" y="30" width="1140" height="640" rx="14" fill="#101728" stroke="#4f6697" />
+  <text x="70" y="85" fill="#e8f0ff" font-size="32" font-family="Segoe UI, sans-serif">Price Monitor Desktop</text>
+  <rect x="70" y="120" width="760" height="270" rx="8" fill="#1d2b45" stroke="#5d7db8" />
+  <polyline points="90,330 180,280 260,295 360,220 450,240 550,180 640,210 740,160 810,190" fill="none" stroke="#64f0c8" stroke-width="4" />
+  <rect x="860" y="120" width="270" height="270" rx="8" fill="#1d2b45" stroke="#5d7db8" />
+  <text x="890" y="165" fill="#dce7ff" font-size="20" font-family="Segoe UI, sans-serif">Alerts</text>
+  <text x="890" y="200" fill="#ffaf9f" font-size="16" font-family="Segoe UI, sans-serif">SKU-104 below threshold</text>
+  <text x="890" y="230" fill="#ffaf9f" font-size="16" font-family="Segoe UI, sans-serif">SKU-221 price drop 15%</text>
+  <rect x="70" y="420" width="1060" height="220" rx="8" fill="#1d2b45" stroke="#5d7db8" />
+  <text x="90" y="458" fill="#dce7ff" font-size="18" font-family="Segoe UI, sans-serif">Product</text>
+  <text x="360" y="458" fill="#dce7ff" font-size="18" font-family="Segoe UI, sans-serif">Store</text>
+  <text x="620" y="458" fill="#dce7ff" font-size="18" font-family="Segoe UI, sans-serif">Current Price</text>
+  <text x="890" y="458" fill="#dce7ff" font-size="18" font-family="Segoe UI, sans-serif">Status</text>
+  <line x1="90" y1="470" x2="1110" y2="470" stroke="#4f6697" />
+  <text x="90" y="510" fill="#b4c7ef" font-size="16" font-family="Segoe UI, sans-serif">Wireless Headphones</text>
+  <text x="360" y="510" fill="#b4c7ef" font-size="16" font-family="Segoe UI, sans-serif">Site A</text>
+  <text x="620" y="510" fill="#7cf0ca" font-size="16" font-family="Segoe UI, sans-serif">$79.00</text>
+  <text x="890" y="510" fill="#7cf0ca" font-size="16" font-family="Segoe UI, sans-serif">Tracked</text>
+</svg>

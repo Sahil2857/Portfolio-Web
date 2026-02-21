@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">Price Monitor Alerts</title>
+  <desc id="desc">Mock notification center showing scheduler and alert queue.</desc>
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#291b16" />
+      <stop offset="100%" stop-color="#503327" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#bg2)" />
+  <rect x="40" y="40" width="1120" height="620" rx="18" fill="#21150f" stroke="#8f5e47" />
+  <text x="80" y="95" fill="#ffe7d6" font-size="32" font-family="Segoe UI, sans-serif">Alert Center</text>
+  <rect x="80" y="130" width="500" height="490" rx="10" fill="#352116" stroke="#b17a60" />
+  <text x="110" y="175" fill="#ffe7d6" font-size="24" font-family="Segoe UI, sans-serif">Scheduler</text>
+  <text x="110" y="220" fill="#ffcfb5" font-size="17" font-family="Segoe UI, sans-serif">08:00 AM - Daily crawl started</text>
+  <text x="110" y="255" fill="#ffcfb5" font-size="17" font-family="Segoe UI, sans-serif">08:15 AM - 240 products checked</text>
+  <text x="110" y="290" fill="#ffcfb5" font-size="17" font-family="Segoe UI, sans-serif">08:20 AM - 8 price changes found</text>
+  <rect x="620" y="130" width="500" height="490" rx="10" fill="#352116" stroke="#b17a60" />
+  <text x="650" y="175" fill="#ffe7d6" font-size="24" font-family="Segoe UI, sans-serif">Notifications</text>
+  <rect x="650" y="210" width="440" height="70" rx="8" fill="#5a2d22" />
+  <text x="670" y="255" fill="#ffd5c1" font-size="18" font-family="Segoe UI, sans-serif">SKU-110: -12% drop on Site B</text>
+  <rect x="650" y="300" width="440" height="70" rx="8" fill="#5a2d22" />
+  <text x="670" y="345" fill="#ffd5c1" font-size="18" font-family="Segoe UI, sans-serif">SKU-089: stock back in stock</text>
+  <rect x="650" y="390" width="440" height="70" rx="8" fill="#5a2d22" />
+  <text x="670" y="435" fill="#ffd5c1" font-size="18" font-family="Segoe UI, sans-serif">SKU-301: threshold alert triggered</text>
+</svg>
