@@ -1,0 +1,42 @@
+﻿node.exe : `next lint` is 
+deprecated and will be removed in 
+Next.js 16.
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program Files\nodejs/node_mo 
+...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
+    + CategoryInfo          : Not 
+   Specified: (`next lint` is ..  
+  . in Next.js 16.:String) [],    
+ RemoteException
+    + FullyQualifiedErrorId : Nat 
+   iveCommandError
+ 
+For new projects, use 
+create-next-app to choose your 
+preferred linter.
+For existing projects, migrate to 
+the ESLint CLI:
+npx @next/codemod@canary 
+next-lint-to-eslint-cli .
+
+
+./components/lenis-provider.tsx
+8:9  Error: Use 
+"@ts-expect-error" instead of 
+"@ts-ignore", as "@ts-ignore" 
+will do nothing if the following 
+line is error-free.  
+@typescript-eslint/ban-ts-comment
+10:26  Error: Unexpected any. 
+Specify a different type.  
+@typescript-eslint/no-explicit-any
+
+info  - Need to disable some 
+ESLint rules? Learn more here: htt
+ps://nextjs.org/docs/app/api-refer
+ence/config/eslint#disabling-rules

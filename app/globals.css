@@ -4,47 +4,122 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
-    --primary: 240 5.9% 10%;
-    --primary-foreground: 0 0% 98%;
-    --secondary: 240 4.8% 95.9%;
-    --secondary-foreground: 240 5.9% 10%;
-    --muted: 240 4.8% 95.9%;
-    --muted-foreground: 240 3.8% 46.1%;
-    --accent: 240 4.8% 95.9%;
-    --accent-foreground: 240 5.9% 10%;
-    --destructive: 0 84.2% 60.2%;
+    --background: 240 10% 4%;
+    /* #09090b - super dark background */
+    --foreground: 0 0% 98%;
+
+    --card: 240 10% 4%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 10% 4%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 217 91% 60%;
+    /* Futuristic blue */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 240 4% 16%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 5% 26%;
+    --muted-foreground: 240 5% 65%;
+
+    --accent: 280 100% 70%;
+    /* Neon purple accent */
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
-    --border: 240 5.9% 90%;
-    --input: 240 5.9% 90%;
-    --ring: 240 5.9% 10%;
-    --radius: 0.75rem;
+
+    --border: 240 6% 15%;
+    --input: 240 6% 15%;
+    --ring: 217 91% 60%;
+
+    --radius: 0.5rem;
   }
 
+  .dark {
+    --background: 240 10% 4%;
+    --foreground: 0 0% 98%;
+    --primary: 217 91% 60%;
+    --secondary: 240 5% 15%;
+    --border: 240 5% 15%;
+    --muted: 240 5% 20%;
+    --muted-foreground: 240 5% 70%;
+  }
+}
+
+@layer base {
   * {
     @apply border-border;
   }
 
+  /* Lenis smooth scroll fix */
+  html.lenis,
+  html.lenis body {
+    height: auto;
+  }
+
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+
+  .lenis.lenis-smooth iframe {
+    pointer-events: none;
+  }
+
   body {
-    @apply bg-background text-foreground antialiased;
-    background-image:
-      radial-gradient(circle at 15% 20%, rgba(59, 130, 246, 0.18), transparent 38%),
-      radial-gradient(circle at 80% 0%, rgba(14, 165, 233, 0.14), transparent 35%);
+    @apply bg-background text-foreground antialiased selection:bg-primary/30 selection:text-primary;
+    background-image: radial-gradient(circle at center, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+    background-position: center;
     background-attachment: fixed;
+    min-height: 100vh;
+    overflow-x: hidden;
   }
 }
 
 @layer components {
-  .page-shell {
-    @apply mx-auto max-w-5xl px-6 py-14;
+
+  /* Futuristic UI Utilities */
+  .glass-panel {
+    @apply bg-background/40 backdrop-blur-xl border border-white/10;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
   }
 
-  .hero-card {
-    @apply rounded-3xl border bg-background/70 shadow-xl shadow-zinc-300/20 backdrop-blur;
+  .neon-glow {
+    @apply relative;
   }
 
-  .content-card {
-    @apply rounded-2xl border bg-background/70 p-5 shadow-md shadow-zinc-300/10 backdrop-blur;
+  .neon-glow::before {
+    content: '';
+    @apply absolute -inset-0.5 bg-gradient-to-r from-primary to-accent rounded-lg blur opacity-30 group-hover:opacity-70 transition duration-1000 group-hover:duration-200;
+  }
+
+  .neon-glow>* {
+    @apply relative bg-background rounded-lg;
+  }
+
+  .text-glow {
+    text-shadow: 0 0 20px rgba(56, 189, 248, 0.5);
+  }
+
+  .section-title {
+    @apply text-4xl md:text-6xl font-sans font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-white to-white/50 mb-6;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
   }
 }
