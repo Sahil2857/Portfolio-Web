@@ -8,6 +8,25 @@ import React, { useRef } from "react";
 
 const projects = [
     {
+        title: "PDF Forge",
+        category: "Web Application",
+        desc: "A comprehensive PDF management platform built with Next.js and FastAPI. Features high-performance merging, splitting, compression, and advanced PDF processing with an intuitive, modern interface.",
+        tech: ["Next.js", "FastAPI", "Python", "Tailwind CSS", "Framer Motion"],
+        github: "https://github.com/Sahil2857/PDFForge",
+        live: "#",
+        image: "/projects/pdf-forge.png"
+    },
+    {
+        title: "Automation Intelligence Platform",
+        category: "Desktop Software",
+        desc: "A professional desktop software platform emulating a premium SaaS tool. Helps businesses automate data processing, data cleaning, ad-hoc analysis, and PDF reporting with immersive dynamic analytics.",
+        tech: ["Python", "CustomTkinter", "Pandas", "SQLite"],
+        github: "https://github.com/Sahil2857/Automation-Intelligence-Platform",
+        live: "https://automated-business-intelligence-das.vercel.app/",
+        demoUrl: undefined,
+        image: "/projects/automation_intelligence.png"
+    },
+    {
         title: "RetailDesk Pro",
         category: "Desktop Software",
         desc: "Commercial-style inventory and billing desktop software featuring a billing cart, tax calculations, and Excel export.",
