@@ -8,12 +8,21 @@ import React, { useRef } from "react";
 
 const projects = [
     {
+        title: "EngineeringNotes Telegram Bot",
+        category: "Telegram Bot",
+        desc: "A fully functional Telegram bot built to provide engineering students with easy access to study materials, PDFs, notes, and previous year questions. Features an interactive nested menu system for navigating subjects across semesters.",
+        tech: ["Python", "python-telegram-bot", "Automation"],
+        github: "https://github.com/Sahil2857/EngineeringNotesBot",
+        live: "https://t.me/Engineering_Notes_Bot",
+        image: "/projects/engineering-bot.png"
+    },
+    {
         title: "PDF Forge",
         category: "Web Application",
         desc: "A comprehensive PDF management platform built with Next.js and FastAPI. Features high-performance merging, splitting, compression, and advanced PDF processing with an intuitive, modern interface.",
         tech: ["Next.js", "FastAPI", "Python", "Tailwind CSS", "Framer Motion"],
         github: "https://github.com/Sahil2857/PDFForge",
-        live: "#",
+        live: "https://pdf-forge-xi.vercel.app/",
         image: "/projects/pdf-forge.png"
     },
     {
