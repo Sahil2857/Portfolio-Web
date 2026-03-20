@@ -8,20 +8,38 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 
 export function Contact() {
+    const [formData, setFormData] = useState({ name: "", email: "", message: "" });
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [isSuccess, setIsSuccess] = useState(false);
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         setIsSubmitting(true);
 
-        setTimeout(() => {
-            setIsSubmitting(false);
+        try {
+            await fetch("https://formsubmit.co/ajax/kadamsahil1920@gmail.com", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "Accept": "application/json",
+                },
+                body: JSON.stringify({
+                    name: formData.name,
+                    email: formData.email,
+                    message: formData.message,
+                    _subject: "New Transmission from Portfolio",
+                }),
+            });
             setIsSuccess(true);
+            setFormData({ name: "", email: "", message: "" });
             setTimeout(() => {
                 setIsSuccess(false);
             }, 5000);
-        }, 1500);
+        } catch (error) {
+            console.error("Submission failed:", error);
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     return (
@@ -75,6 +93,9 @@ export function Contact() {
                                                 required
                                                 placeholder="[ YOUR DESIGNATION ]"
                                                 className="bg-background/40 border border-border/50 rounded-xl px-4 focus-visible:ring-1 focus-visible:ring-primary focus-visible:border-primary text-foreground placeholder:text-muted-foreground/50 h-14 text-sm font-mono transition-all group-hover:border-primary/50 group-hover:bg-primary/5"
+                                                name="name"
+                                                value={formData.name}
+                                                onChange={(e) => setFormData((prev) => ({ ...prev, name: e.target.value }))}
                                             />
                                         </div>
                                         <div className="space-y-2 group">
@@ -83,6 +104,9 @@ export function Contact() {
                                                 type="email"
                                                 placeholder="[ FREQUENCY / EMAIL ]"
                                                 className="bg-background/40 border border-border/50 rounded-xl px-4 focus-visible:ring-1 focus-visible:ring-primary focus-visible:border-primary text-foreground placeholder:text-muted-foreground/50 h-14 text-sm font-mono transition-all group-hover:border-primary/50 group-hover:bg-primary/5"
+                                                name="email"
+                                                value={formData.email}
+                                                onChange={(e) => setFormData((prev) => ({ ...prev, email: e.target.value }))}
                                             />
                                         </div>
                                         <div className="space-y-2 group">
@@ -90,6 +114,9 @@ export function Contact() {
                                                 required
                                                 placeholder="[ TRANSMISSION BODY ]"
                                                 className="min-h-[150px] bg-background/40 border border-border/50 rounded-xl px-4 py-4 focus-visible:ring-1 focus-visible:ring-primary focus-visible:border-primary text-foreground placeholder:text-muted-foreground/50 text-sm font-mono resize-none transition-all group-hover:border-primary/50 group-hover:bg-primary/5"
+                                                name="message"
+                                                value={formData.message}
+                                                onChange={(e) => setFormData((prev) => ({ ...prev, message: e.target.value }))}
                                             />
                                         </div>
                                         <Button

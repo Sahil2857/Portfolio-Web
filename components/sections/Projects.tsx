@@ -27,9 +27,9 @@ const projects = [
     },
     {
         title: "Automation Intelligence Platform",
-        category: "Desktop Software",
-        desc: "A professional desktop software platform emulating a premium SaaS tool. Helps businesses automate data processing, data cleaning, ad-hoc analysis, and PDF reporting with immersive dynamic analytics.",
-        tech: ["Python", "CustomTkinter", "Pandas", "SQLite"],
+        category: "Web Application",
+        desc: "A professional web-based platform emulating a premium SaaS tool. Helps businesses automate data processing, data cleaning, ad-hoc analysis, and PDF reporting with immersive dynamic analytics.",
+        tech: ["Next.js", "FastAPI", "Pandas", "Tailwind CSS"],
         github: "https://github.com/Sahil2857/Automation-Intelligence-Platform",
         live: "https://automated-business-intelligence-das.vercel.app/",
         demoUrl: undefined,
