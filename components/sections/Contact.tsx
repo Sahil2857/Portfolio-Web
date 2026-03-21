@@ -60,17 +60,17 @@ export function Contact() {
                             className="mb-12"
                         >
                             <span className="inline-block px-4 py-1.5 rounded-full border border-primary/20 bg-primary/5 text-primary text-xs font-mono tracking-[0.3em] shadow-[0_0_15px_rgba(56,189,248,0.1)] mb-6">
-                                06 // CONNECT
+                                07 // CONTACT
                             </span>
                             <h2 className="text-4xl md:text-5xl lg:text-7xl font-sans font-black tracking-tighter text-foreground mb-6 leading-none">
                                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-white/80 to-primary/50">
-                                    Initiate
+                                    Let&apos;s Build
                                 </span>
                                 <br />
-                                Sequence.
+                                Something.
                             </h2>
                             <p className="text-muted-foreground max-w-md text-lg leading-relaxed">
-                                Ready to deploy? Send a transmission to establish a secure connection.
+                                Got a task that&apos;s eating your time? Tell me what you need — I&apos;ll send a plan and quote within 24 hours.
                             </p>
                         </motion.div>
 
@@ -91,7 +91,7 @@ export function Contact() {
                                         <div className="space-y-2 group">
                                             <Input
                                                 required
-                                                placeholder="[ YOUR DESIGNATION ]"
+                                                placeholder="Your Name"
                                                 className="bg-background/40 border border-border/50 rounded-xl px-4 focus-visible:ring-1 focus-visible:ring-primary focus-visible:border-primary text-foreground placeholder:text-muted-foreground/50 h-14 text-sm font-mono transition-all group-hover:border-primary/50 group-hover:bg-primary/5"
                                                 name="name"
                                                 value={formData.name}
@@ -102,7 +102,7 @@ export function Contact() {
                                             <Input
                                                 required
                                                 type="email"
-                                                placeholder="[ FREQUENCY / EMAIL ]"
+                                                placeholder="Your Email"
                                                 className="bg-background/40 border border-border/50 rounded-xl px-4 focus-visible:ring-1 focus-visible:ring-primary focus-visible:border-primary text-foreground placeholder:text-muted-foreground/50 h-14 text-sm font-mono transition-all group-hover:border-primary/50 group-hover:bg-primary/5"
                                                 name="email"
                                                 value={formData.email}
@@ -112,7 +112,7 @@ export function Contact() {
                                         <div className="space-y-2 group">
                                             <Textarea
                                                 required
-                                                placeholder="[ TRANSMISSION BODY ]"
+                                                placeholder="Describe your project or task..."
                                                 className="min-h-[150px] bg-background/40 border border-border/50 rounded-xl px-4 py-4 focus-visible:ring-1 focus-visible:ring-primary focus-visible:border-primary text-foreground placeholder:text-muted-foreground/50 text-sm font-mono resize-none transition-all group-hover:border-primary/50 group-hover:bg-primary/5"
                                                 name="message"
                                                 value={formData.message}
@@ -132,14 +132,17 @@ export function Contact() {
                                                         transition={{ repeat: Infinity, duration: 1, ease: "linear" }}
                                                         className="w-4 h-4 border-2 border-current border-t-transparent rounded-full"
                                                     />
-                                                    UPLOADING...
+                                                    SENDING...
                                                 </span>
                                             ) : (
                                                 <span className="flex items-center justify-center gap-3 relative z-10">
-                                                    TRANSMIT <ArrowRight className="w-4 h-4" />
+                                                    SEND MESSAGE <ArrowRight className="w-4 h-4" />
                                                 </span>
                                             )}
                                         </Button>
+                                        <p className="text-center text-[11px] text-muted-foreground/50 font-mono tracking-wider mt-3">
+                                            ✦ I usually reply within a few hours
+                                        </p>
                                     </motion.form>
                                 ) : (
                                     <motion.div
@@ -158,9 +161,9 @@ export function Contact() {
                                                 <CheckCircle2 className="w-20 h-20 text-accent mb-8 relative z-10 drop-shadow-[0_0_15px_rgba(217,70,239,0.5)]" />
                                             </div>
                                         </motion.div>
-                                        <h3 className="text-3xl font-sans font-bold mb-4 text-foreground">Securely Delivered</h3>
+                                        <h3 className="text-3xl font-sans font-bold mb-4 text-foreground">Message Received!</h3>
                                         <p className="text-muted-foreground text-sm max-w-xs leading-relaxed font-mono">
-                                            Transmission received. Will establish reverse connection shortly.
+                                            Thanks for reaching out! I&apos;ll review your project and reply within 24 hours.
                                         </p>
                                     </motion.div>
                                 )}
@@ -182,14 +185,14 @@ export function Contact() {
                                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
                                 <span className="relative inline-flex rounded-full h-3 w-3 bg-primary shadow-[0_0_8px_#38bdf8]"></span>
                             </span>
-                            <span className="text-xs font-mono font-bold tracking-widest uppercase text-primary">System Online / Ready</span>
+                            <span className="text-xs font-mono font-bold tracking-widest uppercase text-primary">Available for New Projects</span>
                         </div>
 
                         <div className="space-y-12">
                             <div className="group">
                                 <div className="flex items-center gap-3 mb-3">
                                     <Mail className="w-4 h-4 text-primary/70 group-hover:text-primary transition-colors" />
-                                    <h4 className="text-xs font-mono font-semibold tracking-widest uppercase text-muted-foreground group-hover:text-primary transition-colors">Coordinates</h4>
+                                    <h4 className="text-xs font-mono font-semibold tracking-widest uppercase text-muted-foreground group-hover:text-primary transition-colors">Email</h4>
                                 </div>
                                 <a href="mailto:kadamsahil1920@gmail.com" className="text-2xl md:text-3xl font-sans font-bold text-foreground hover:text-primary transition-colors w-fit block relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-px after:bg-primary/50 after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform">
                                     kadamsahil1920@gmail.com
@@ -199,7 +202,7 @@ export function Contact() {
                             <div className="group">
                                 <div className="flex items-center gap-3 mb-3">
                                     <MapPin className="w-4 h-4 text-accent/70 group-hover:text-accent transition-colors" />
-                                    <h4 className="text-xs font-mono font-semibold tracking-widest uppercase text-muted-foreground group-hover:text-accent transition-colors">Sector</h4>
+                                    <h4 className="text-xs font-mono font-semibold tracking-widest uppercase text-muted-foreground group-hover:text-accent transition-colors">Location</h4>
                                 </div>
                                 <p className="text-2xl md:text-3xl font-sans font-bold text-foreground">
                                     Mumbai, IND
@@ -207,7 +210,7 @@ export function Contact() {
                             </div>
 
                             <div className="pt-8 border-t border-primary/10">
-                                <h4 className="text-xs font-mono font-semibold tracking-widest uppercase text-muted-foreground mb-6">Network Nodes</h4>
+                                <h4 className="text-xs font-mono font-semibold tracking-widest uppercase text-muted-foreground mb-6">Find Me On</h4>
                                 <div className="flex gap-4">
                                     <a href="https://www.linkedin.com/in/sahil-kadam-5267sd/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-12 h-12 rounded-xl bg-background border border-border/50 text-muted-foreground hover:text-primary hover:border-primary/50 hover:bg-primary/5 transition-all shadow-sm hover:shadow-[0_0_15px_rgba(56,189,248,0.2)] hover:-translate-y-1">
                                         <Linkedin className="w-5 h-5" />

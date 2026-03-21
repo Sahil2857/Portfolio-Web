@@ -89,7 +89,7 @@ export function Hero() {
                         className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-mono tracking-widest uppercase mb-6 shadow-[0_0_15px_rgba(56,189,248,0.15)]"
                     >
                         <span className="w-2 h-2 rounded-full bg-primary animate-pulse shadow-[0_0_8px_#38bdf8]" />
-                        Available for Work
+                        Open to New Clients
                     </motion.div>
 
                     <motion.h1
@@ -98,8 +98,8 @@ export function Hero() {
                         transition={{ duration: 0.8, delay: 0.3 }}
                         className="text-5xl sm:text-7xl lg:text-8xl font-sans font-bold leading-[1.1] tracking-tighter mb-6"
                     >
-                        <span className="text-foreground block">Hi, I&apos;m Sahil</span>
-                        <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent block tracking-tight pb-2">Kadam.</span>
+                        <span className="text-foreground block">I Automate Your Business</span>
+                        <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent block tracking-tight pb-2">So You Can Grow.</span>
                     </motion.h1>
 
                     <motion.p
@@ -108,7 +108,7 @@ export function Hero() {
                         transition={{ duration: 0.8, delay: 0.5 }}
                         className="text-lg sm:text-xl text-muted-foreground max-w-md mb-10 leading-relaxed font-sans font-medium"
                     >
-                        I build <span className="text-foreground text-glow font-bold">Automation Scripts</span>, <span className="text-foreground text-glow font-bold">Desktop Apps</span>, and <span className="text-foreground text-glow font-bold">Telegram Bots</span>.
+                        I eliminate manual work — saving clients <span className="text-foreground text-glow font-bold">hours every week</span> with <span className="text-foreground text-glow font-bold">Python Automation</span>, <span className="text-foreground text-glow font-bold">Desktop Apps</span>, and <span className="text-foreground text-glow font-bold">Telegram Bots</span> built to your exact workflow.
                     </motion.p>
 
                     <motion.div
@@ -117,19 +117,27 @@ export function Hero() {
                         transition={{ duration: 0.8, delay: 0.6 }}
                         className="flex flex-wrap gap-4 w-full sm:w-auto"
                     >
-                        <Link href="#projects" className="flex-1 sm:flex-none">
+                        <Link href="#contact" className="flex-1 sm:flex-none">
                             <button className="neon-glow group relative w-full sm:w-auto">
                                 <span className="relative z-10 flex items-center justify-center gap-2 px-8 py-4 bg-background border border-primary/50 text-foreground font-semibold tracking-widest uppercase text-xs rounded-lg transition-all group-hover:bg-primary/10 group-hover:border-primary">
-                                    View Projects
+                                    Hire Me
                                 </span>
                             </button>
                         </Link>
-                        <Link href="#contact" className="flex-1 sm:flex-none">
+                        <Link href="#projects" className="flex-1 sm:flex-none">
                             <button className="relative w-full sm:w-auto px-8 py-4 bg-secondary/50 border border-border text-foreground font-semibold tracking-widest uppercase text-xs rounded-lg transition-all hover:bg-secondary hover:border-foreground/30">
-                                Contact Me
+                                View Projects
                             </button>
                         </Link>
                     </motion.div>
+                    <motion.p
+                        initial={{ opacity: 0, y: 10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, delay: 0.75 }}
+                        className="text-xs text-muted-foreground/60 font-mono tracking-widest mt-4"
+                    >
+                        ✦ Available for freelance projects on Fiverr &amp; Upwork
+                    </motion.p>
                 </div>
 
                 {/* Right Side: Portrait Container */}
@@ -165,7 +173,7 @@ export function Hero() {
                             transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
                             className="absolute -left-6 bottom-1/4 glass-panel px-4 py-2 rounded-lg border border-accent/30 shadow-[0_0_15px_rgba(217,70,239,0.2)] z-20"
                         >
-                            <span className="text-[10px] font-mono text-accent uppercase tracking-wider font-bold">Automation</span>
+                            <span className="text-[10px] font-mono text-accent uppercase tracking-wider font-bold">Results-Driven</span>
                         </motion.div>
                     </div>
 

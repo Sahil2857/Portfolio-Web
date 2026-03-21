@@ -104,7 +104,7 @@ export function Skills() {
                             transition={{ duration: 0.8 }}
                         >
                             <span className="inline-block px-4 py-1.5 rounded-full border border-primary/20 bg-primary/5 text-primary text-xs font-mono tracking-[0.3em] shadow-[0_0_15px_rgba(56,189,248,0.1)] mb-6">
-                                04 // CAPABILITIES
+                                05 // CAPABILITIES
                             </span>
                             <h2 className="text-4xl md:text-5xl lg:text-6xl font-sans font-bold tracking-tighter text-foreground mb-6">
                                 <span className="bg-clip-text text-transparent bg-gradient-to-br from-white to-white/40">
@@ -112,7 +112,7 @@ export function Skills() {
                                 </span>
                             </h2>
                             <p className="text-lg text-muted-foreground leading-relaxed max-w-sm mx-auto md:mx-0">
-                                The core technologies and systems I use to build robust automation tools.
+                                The tools I use to solve real business problems — fast and reliably.
                             </p>
 
                             <div className="mt-10 p-6 glass-panel rounded-xl border border-primary/10 bg-primary/[0.02]">

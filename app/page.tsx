@@ -2,8 +2,11 @@ import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { Hero } from "@/components/sections/Hero";
 import { About } from "@/components/sections/About";
+import { Services } from "@/components/sections/Services";
 import { Skills } from "@/components/sections/Skills";
 import { Projects } from "@/components/sections/Projects";
+import { Results } from "@/components/sections/Results";
+import { Testimonials } from "@/components/sections/Testimonials";
 import { Contact } from "@/components/sections/Contact";
 import { CustomCursor } from "@/components/custom-cursor";
 
@@ -19,8 +22,11 @@ export default function Home() {
 
       <Hero />
       <About />
+      <Services />
       <Skills />
       <Projects />
+      <Results />
+      <Testimonials />
       <Contact />
 
       <Footer />
