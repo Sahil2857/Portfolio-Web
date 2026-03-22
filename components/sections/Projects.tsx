@@ -68,6 +68,7 @@ const projects = [
         tech: ["CustomTkinter", "SQLite", "Python"],
         github: "https://github.com/Sahil2857",
         live: "#",
+        demoUrl: "/projects/payroll-suite-demo.mp4",
         image: "/projects/Payroll Plus.jpg"
     }
 ];
